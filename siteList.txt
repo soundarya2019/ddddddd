@@ -1,5 +1,3 @@
 https://apple.com
 https://google.com
 https://securitytrails.com
-https://netflix.com
-https://yahoo.com
