@@ -1,5 +1,4 @@
 https://apple.com
 https://google.com
 https://ebay.com
-https://msn.com
 https://twitter.com
