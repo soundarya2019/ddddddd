@@ -1,5 +1,4 @@
 https://apple.com
-https://mtv.com
-https://facebook.com
 https://yahoo.com
 https://twitter.com
+https://google.com
