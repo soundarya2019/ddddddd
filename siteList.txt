@@ -6,4 +6,4 @@ https://netflix.com
 https://msn.com
 https://twitter.com
 https://ebay.com
-https://cnn.com
+https://edition.cnn.com
