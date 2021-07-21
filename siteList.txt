@@ -1,10 +1,2 @@
 https://apple.com
 https://google.com
-https://facebook.com
-https://yahoo.com
-https://netflix.com
-https://msn.com
-https://twitter.com
-https://ebay.com
-https://aajtak.in
-https://mtv.com
