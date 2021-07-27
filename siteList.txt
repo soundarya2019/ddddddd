@@ -6,3 +6,4 @@ https://yahoo.com
 https://twitter.com
 https://msn.com
 https://cnn.com
+https://amazon.in
