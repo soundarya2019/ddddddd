@@ -1,1 +1,104 @@
-<mxfile host="app.diagrams.net" modified="2021-09-29T06:07:38.242Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" version="15.3.7" etag="25RcoHADxiwml4UhfE8i" type="github"><diagram id="HKFR_C0wxubbd8TUiAl-">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-09-29T06:09:46.187Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" etag="lyWZrmxqO_eiitZ0Wlr6" version="15.3.7" type="github">
+  <diagram id="HKFR_C0wxubbd8TUiAl-" name="Page-1">
+    <mxGraphModel dx="841" dy="686" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="YY7CxncdpWfPSdVvcOmz-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="515" y="200" width="270" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="YY7CxncdpWfPSdVvcOmz-2" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" width="290" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="YY7CxncdpWfPSdVvcOmz-3" value="AWSMO AMI" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="575" y="45" width="90" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="YY7CxncdpWfPSdVvcOmz-4" value="Customer VPC" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="595" y="400" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="YY7CxncdpWfPSdVvcOmz-5" value="AWSMO P1 &amp;amp; P2" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="545" y="220" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="YY7CxncdpWfPSdVvcOmz-6" value="EC2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="565" y="300" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="YY7CxncdpWfPSdVvcOmz-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="YY7CxncdpWfPSdVvcOmz-8" target="YY7CxncdpWfPSdVvcOmz-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YY7CxncdpWfPSdVvcOmz-8" value="AWS Service Creation - Terraform" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="350" width="320" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="YY7CxncdpWfPSdVvcOmz-9" value="1. Deploy AWSMO P1 &amp; P2 using AMI" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="YY7CxncdpWfPSdVvcOmz-8">
+          <mxGeometry y="30" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YY7CxncdpWfPSdVvcOmz-10" value="2. Create Elastic Load Balancer" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="YY7CxncdpWfPSdVvcOmz-8">
+          <mxGeometry y="60" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YY7CxncdpWfPSdVvcOmz-11" value="3. Create Timestream DB" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="YY7CxncdpWfPSdVvcOmz-8">
+          <mxGeometry y="90" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YY7CxncdpWfPSdVvcOmz-12" value="4. Create RDS DB (update awsmo user keys here)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="YY7CxncdpWfPSdVvcOmz-8">
+          <mxGeometry y="120" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YY7CxncdpWfPSdVvcOmz-13" value="5. AWSMO Start up" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="YY7CxncdpWfPSdVvcOmz-8">
+          <mxGeometry y="150" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YY7CxncdpWfPSdVvcOmz-14" value="Step 1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="210" y="320" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="YY7CxncdpWfPSdVvcOmz-15" value="" style="endArrow=classic;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="YY7CxncdpWfPSdVvcOmz-3" target="YY7CxncdpWfPSdVvcOmz-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="585" y="320" as="sourcePoint" />
+            <mxPoint x="635" y="270" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YY7CxncdpWfPSdVvcOmz-16" value="Step 1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="595" y="160" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="YY7CxncdpWfPSdVvcOmz-17" value="Step 2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="185" y="620" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="YY7CxncdpWfPSdVvcOmz-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="YY7CxncdpWfPSdVvcOmz-19" target="YY7CxncdpWfPSdVvcOmz-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YY7CxncdpWfPSdVvcOmz-19" value="Prerequisites - Created in collaboration with Customer" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="60" width="480" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="YY7CxncdpWfPSdVvcOmz-20" value="1. Create &quot;awsmo&quot; role and user with required permissions" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="YY7CxncdpWfPSdVvcOmz-19">
+          <mxGeometry y="30" width="480" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YY7CxncdpWfPSdVvcOmz-21" value="2. Create access/Secret Key for awsmo user" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="YY7CxncdpWfPSdVvcOmz-19">
+          <mxGeometry y="60" width="480" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YY7CxncdpWfPSdVvcOmz-22" value="3. Update awsmo and environment details in properties file (Prateek to confirm)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="YY7CxncdpWfPSdVvcOmz-19">
+          <mxGeometry y="90" width="480" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YY7CxncdpWfPSdVvcOmz-23" value="4. Update customer communication and license information through properties file" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="YY7CxncdpWfPSdVvcOmz-19">
+          <mxGeometry y="120" width="480" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YY7CxncdpWfPSdVvcOmz-24" value="5. Create pem file to access all  EC2 instance." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="YY7CxncdpWfPSdVvcOmz-19">
+          <mxGeometry y="150" width="480" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YY7CxncdpWfPSdVvcOmz-25" value="Step 0" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="235" y="40" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="YY7CxncdpWfPSdVvcOmz-26" value="AWSMO Setup " style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="32.5" y="640" width="455" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="YY7CxncdpWfPSdVvcOmz-27" value="1. AWSMO service and UI verification and customer communication " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="YY7CxncdpWfPSdVvcOmz-26">
+          <mxGeometry y="30" width="455" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YY7CxncdpWfPSdVvcOmz-28" value="2. " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="YY7CxncdpWfPSdVvcOmz-26">
+          <mxGeometry y="60" width="455" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YY7CxncdpWfPSdVvcOmz-29" value="3. Create Timestream DB" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="YY7CxncdpWfPSdVvcOmz-26">
+          <mxGeometry y="90" width="455" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YY7CxncdpWfPSdVvcOmz-30" value="3. Create RDS DB" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="YY7CxncdpWfPSdVvcOmz-26">
+          <mxGeometry y="120" width="455" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
